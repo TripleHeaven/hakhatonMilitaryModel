@@ -6,6 +6,7 @@ import "./App.css";
 import { MeshPhysicalMaterial, TextureLoader } from "three";
 import { presets, roughness, textures } from "./constants";
 import { Context } from "./context";
+import { RotatingLines } from "react-loader-spinner";
 
 const Scene = ({ textureCurrent, roughnessMap }) => {
   const texture = useLoader(TextureLoader, textureCurrent);
@@ -30,11 +31,7 @@ const Scene = ({ textureCurrent, roughnessMap }) => {
     }
   });
 
-  return (
-    <>
-      <primitive object={model} scale={0.02}></primitive>
-    </>
-  );
+  return <primitive object={model} scale={0.02}></primitive>;
 };
 
 export const View = () => {
@@ -51,7 +48,7 @@ export const View = () => {
               <button onClick={() => setPreset(presets.city)}>1</button>
               <button onClick={() => setPreset(presets.warehouse)}>2</button>
               <button onClick={() => setPreset(presets.forest)}>3</button>
-              <button onClick={() => setPreset(null)}>4</button>
+              <button onClick={() => setPreset(presets.dawn)}>4</button>
             </div>
           </div>
           <div className={styles.buttonBlockContainer}>
@@ -87,27 +84,37 @@ export const CanvasMain = () => {
   const { texture, color, preset, roughnessMap } = useContext(Context);
 
   return (
-    <Canvas
-      onCreated={({ camera }) => {
-        camera.rotation.x = 25;
-        camera.rotation.y = 150;
-        camera.rotation.z = 2.33;
-      }}
+    <Suspense
+      fallback={
+        <div style={{ margin: "auto" }}>
+          <RotatingLines
+            strokeColor="green"
+            strokeWidth="5"
+            animationDuration="0.75"
+            width="96"
+            visible={true}
+          />
+        </div>
+      }
     >
-      <Suspense fallback={null}>
+      <Canvas
+        onCreated={({ camera }) => {
+          camera.rotation.x = 25;
+          camera.rotation.y = 150;
+          camera.rotation.z = 2.33;
+        }}
+      >
         <ambientLight intensity={0.1} color="#f8ede0" />
         <pointLight position={[10, 100, 100]} />
-
         <Scene
           textureCurrent={texture}
           color={color}
           roughnessMap={roughnessMap}
         />
-        <OrbitControls />
-
         {preset && <Environment preset={preset} background />}
-      </Suspense>
-    </Canvas>
+        <OrbitControls />
+      </Canvas>
+    </Suspense>
   );
 };
 
