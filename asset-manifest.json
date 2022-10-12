@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hakhaton-military-model/static/css/main.dc74d6c0.chunk.css",
-    "main.js": "/hakhaton-military-model/static/js/main.558b0892.chunk.js",
-    "main.js.map": "/hakhaton-military-model/static/js/main.558b0892.chunk.js.map",
-    "runtime-main.js": "/hakhaton-military-model/static/js/runtime-main.fd6247d1.js",
-    "runtime-main.js.map": "/hakhaton-military-model/static/js/runtime-main.fd6247d1.js.map",
-    "static/js/2.ed095027.chunk.js": "/hakhaton-military-model/static/js/2.ed095027.chunk.js",
-    "static/js/2.ed095027.chunk.js.map": "/hakhaton-military-model/static/js/2.ed095027.chunk.js.map",
-    "index.html": "/hakhaton-military-model/index.html",
-    "static/css/main.dc74d6c0.chunk.css.map": "/hakhaton-military-model/static/css/main.dc74d6c0.chunk.css.map",
-    "static/js/2.ed095027.chunk.js.LICENSE.txt": "/hakhaton-military-model/static/js/2.ed095027.chunk.js.LICENSE.txt"
+    "main.css": "/hakhatonMilitaryModel/static/css/main.dc74d6c0.chunk.css",
+    "main.js": "/hakhatonMilitaryModel/static/js/main.558b0892.chunk.js",
+    "main.js.map": "/hakhatonMilitaryModel/static/js/main.558b0892.chunk.js.map",
+    "runtime-main.js": "/hakhatonMilitaryModel/static/js/runtime-main.c880597a.js",
+    "runtime-main.js.map": "/hakhatonMilitaryModel/static/js/runtime-main.c880597a.js.map",
+    "static/js/2.ed095027.chunk.js": "/hakhatonMilitaryModel/static/js/2.ed095027.chunk.js",
+    "static/js/2.ed095027.chunk.js.map": "/hakhatonMilitaryModel/static/js/2.ed095027.chunk.js.map",
+    "index.html": "/hakhatonMilitaryModel/index.html",
+    "static/css/main.dc74d6c0.chunk.css.map": "/hakhatonMilitaryModel/static/css/main.dc74d6c0.chunk.css.map",
+    "static/js/2.ed095027.chunk.js.LICENSE.txt": "/hakhatonMilitaryModel/static/js/2.ed095027.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd6247d1.js",
+    "static/js/runtime-main.c880597a.js",
     "static/js/2.ed095027.chunk.js",
     "static/css/main.dc74d6c0.chunk.css",
     "static/js/main.558b0892.chunk.js"
