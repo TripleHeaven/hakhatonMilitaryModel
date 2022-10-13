@@ -1,14 +1,13 @@
 .canvasContainer {
   display: flex;
   width: 100%;
-  height: 652px;
-  /* background-color: #808080; */
+  height: 100%;
 }
 
 .canvasContainer canvas {
   width: 100%;
-  height: 100%;
   border-radius: 25px;
+  height: 100%;
 }
 
 .buttonBlockContainer {
@@ -63,19 +62,29 @@
   display: flex;
   padding: 24px;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .backgroundContainer {
   background-color: #161b22;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
+}
+
+.bodyWrapper {
+  display: flex;
+  background-color: #0d1117;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
 }
 
 .bodyContainer {
-  min-width: 1336px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   background-color: #0d1117;
   padding-top: 52px;
 }
@@ -83,4 +92,65 @@
 .modelContainer {
   margin-left: 16px;
   margin-right: 16px;
+  height: 75%;
+}
+
+@media screen and (max-width: 3000px) {
+  .bodyWrapper {
+    min-width: 1800px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .bodyWrapper {
+    min-width: 1500px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .bodyWrapper {
+    min-width: 1300px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .bodyWrapper {
+    min-width: 1025px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .bodyWrapper {
+    min-width: 982px;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .bodyWrapper {
+    min-width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bodyWrapper {
+    min-width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bodyWrapper {
+    min-width: 450px;
+  }
+}
+
+@media screen and(max-width: 450px) {
+  .bodyWrapper {
+    min-width: 350px;
+  }
+}
+
+@media screen and(max-width: 350px) {
+  .bodyWrapper {
+    min-width: 350px;
+  }
 }
