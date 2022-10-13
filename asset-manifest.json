@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/hakhatonMilitaryModel/static/css/main.e7a840c2.chunk.css",
-    "main.js": "/hakhatonMilitaryModel/static/js/main.1835cee9.chunk.js",
-    "main.js.map": "/hakhatonMilitaryModel/static/js/main.1835cee9.chunk.js.map",
-    "runtime-main.js": "/hakhatonMilitaryModel/static/js/runtime-main.c880597a.js",
-    "runtime-main.js.map": "/hakhatonMilitaryModel/static/js/runtime-main.c880597a.js.map",
-    "static/js/2.af9a90bb.chunk.js": "/hakhatonMilitaryModel/static/js/2.af9a90bb.chunk.js",
-    "static/js/2.af9a90bb.chunk.js.map": "/hakhatonMilitaryModel/static/js/2.af9a90bb.chunk.js.map",
-    "index.html": "/hakhatonMilitaryModel/index.html",
-    "static/css/main.e7a840c2.chunk.css.map": "/hakhatonMilitaryModel/static/css/main.e7a840c2.chunk.css.map",
-    "static/js/2.af9a90bb.chunk.js.LICENSE.txt": "/hakhatonMilitaryModel/static/js/2.af9a90bb.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.e7a840c2.chunk.css",
+    "main.js": "/static/js/main.0e226396.chunk.js",
+    "main.js.map": "/static/js/main.0e226396.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a8e222b8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a8e222b8.js.map",
+    "static/js/2.099c0d42.chunk.js": "/static/js/2.099c0d42.chunk.js",
+    "static/js/2.099c0d42.chunk.js.map": "/static/js/2.099c0d42.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e7a840c2.chunk.css.map": "/static/css/main.e7a840c2.chunk.css.map",
+    "static/js/2.099c0d42.chunk.js.LICENSE.txt": "/static/js/2.099c0d42.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c880597a.js",
-    "static/js/2.af9a90bb.chunk.js",
+    "static/js/runtime-main.a8e222b8.js",
+    "static/js/2.099c0d42.chunk.js",
     "static/css/main.e7a840c2.chunk.css",
-    "static/js/main.1835cee9.chunk.js"
+    "static/js/main.0e226396.chunk.js"
   ]
 }
