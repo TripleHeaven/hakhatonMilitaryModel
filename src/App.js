@@ -38,47 +38,28 @@ export const View = () => {
   const { setTexture, setPreset } = useContext(Context);
 
   return (
-    <div className={styles.backgroundContainer}>
-      <div className={styles.bodyWrapper}>
-        <div className={styles.bodyContainer}>
-          <p className={styles.heading}>БРДМ-Д</p>
-          <div className={styles.contolBlock}>
-            <div className={styles.buttonBlockContainer}>
-              <p>Фон</p>
-              <div className={styles.buttonBlock}>
-                <button onClick={() => setPreset(presets.city)}>1</button>
-                <button onClick={() => setPreset(presets.warehouse)}>2</button>
-                <button onClick={() => setPreset(presets.forest)}>3</button>
-                <button onClick={() => setPreset(presets.dawn)}>4</button>
-              </div>
-            </div>
-            <div className={styles.buttonBlockContainer}>
-              <p>Цвет</p>
-              <div className={styles.buttonBlock}>
-                <button onClick={() => setTexture(textures.default)}>1</button>
-                <button onClick={() => setTexture(textures.ocean)}>2</button>
-                <button onClick={() => setTexture(textures.green)}>3</button>
-              </div>
-            </div>
-            <div className={styles.downloadContainer}>
-              {/* download butotn */}
-
-              <button className={styles.btn}>
-                <i class="fa fa-download"></i> Скачать смету
-              </button>
-              <button className={styles.btn}>
-                <i class="fa fa-download"></i> Скачать модель
-              </button>
-            </div>
-          </div>
-          <div className={styles.modelContainer}>
-            <div className={styles.canvasContainer}>
-              <CanvasMain />
-            </div>
-          </div>
+    <>
+      <div className={styles.buttonBlockContainer}>
+        <p>Фон</p>
+        <div className={styles.buttonBlock}>
+          <button onClick={() => setPreset(presets.city)}>1</button>
+          <button onClick={() => setPreset(presets.warehouse)}>2</button>
+          <button onClick={() => setPreset(presets.forest)}>3</button>
+          <button onClick={() => setPreset(presets.dawn)}>4</button>
         </div>
       </div>
-    </div>
+      <div className={styles.buttonBlockContainerOne}>
+        <p>Цвет</p>
+        <div className={styles.buttonBlock}>
+          <button onClick={() => setTexture(textures.default)}>1</button>
+          <button onClick={() => setTexture(textures.ocean)}>2</button>
+          <button onClick={() => setTexture(textures.green)}>3</button>
+        </div>
+      </div>
+      <div className={styles.canvasContainer}>
+        <CanvasMain />
+      </div>
+    </>
   );
 };
 
